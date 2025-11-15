@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/armin/ff_game/build/Release/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

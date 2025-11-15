@@ -7,6 +7,8 @@ class SetUp(ConanFile):
     default_options = { "sanitizer": "asan" }
 
     def configure(self):
+        self.settings.compiler.cppstd = "17"
+        self.settings.compiler.libcxx = "libstdc++"
         if self.settings.build_type == "Debug":
             print("Configuring DEBUG build.")
 
@@ -46,9 +48,8 @@ class SetUp(ConanFile):
     def generate(self):
         cmake = CMakeToolchain(self)
         cmake.generator = "Ninja"
-        if self.settings.compiler.cppstd:
-            cmake.variables["CMAKE_CXX_STANDARD"] = 17
-            cmake.variables["CMAKE_CXX_STANDARD_REQUIRED"] = "ON"
+        cmake.variables["CMAKE_CXX_STANDARD"] = "17"
+        cmake.variables["CMAKE_CXX_STANDARD_REQUIRED"] = "ON"
         cmake.variables["CMAKE_EXPORT_COMPILE_COMMANDS"] = "ON"
         cmake.generate()
 

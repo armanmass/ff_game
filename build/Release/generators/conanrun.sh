@@ -1,0 +1,1 @@
+. "/home/armin/ff_game/build/Release/generators/conanrunenv-release-x86_64.sh"

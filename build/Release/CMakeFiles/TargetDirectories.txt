@@ -1,0 +1,3 @@
+/home/armin/ff_game/build/Release/CMakeFiles/ff_game.dir
+/home/armin/ff_game/build/Release/CMakeFiles/edit_cache.dir
+/home/armin/ff_game/build/Release/CMakeFiles/rebuild_cache.dir
