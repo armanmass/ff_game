@@ -1,23 +1,27 @@
 #pragma once
+
 #include <SDL3/SDL.h>
 #include <cassert>
 #include <string>
 
+#include "game/Config/Config.hpp"
+#include "game/ParticleSystem/ParticleSystem.hpp"
+
 struct SDLApplication {
-    static constexpr int width{1000};
-    static constexpr int height{600};
-    static constexpr size_t numParticles{100};
 
     SDL_Window* mWindow;
     SDL_Renderer* mRenderer;
     SDL_Texture* mBackground;
     SDL_Surface* mSurface;
-
+    ParticleSystem mPartSystem;
+    Config config;
     bool mRunning{true};
 
     SDLApplication(const char* name) {
         SDL_Init(SDL_INIT_VIDEO);
-        mWindow = SDL_CreateWindow(name, width, height, SDL_WINDOW_RESIZABLE);
+        mWindow =
+            SDL_CreateWindow(name, Config::windowStartWidth,
+                             Config::windowStartHeight, SDL_WINDOW_RESIZABLE);
 
         mRenderer = SDL_CreateRenderer(mWindow, nullptr);
         if (mRenderer == nullptr) {
@@ -30,15 +34,18 @@ struct SDLApplication {
             }
         }
 
-        mSurface = SDL_LoadBMP("../assets/orig.bmp");
+        mSurface = SDL_LoadBMP("assets/orig.bmp");
         if (mSurface == nullptr) {
             assert(false && "Error loading surface.");
         }
+
         mBackground = SDL_CreateTextureFromSurface(mRenderer, mSurface);
-        if (mSurface == nullptr) {
+        if (mBackground == nullptr) {
             assert(false && "Error creating background texture from surface.");
         }
-        SDL_SetRenderLogicalPresentation(mRenderer, width, height,
+
+        SDL_SetRenderLogicalPresentation(mRenderer, Config::windowStartWidth,
+                                         Config::windowStartHeight,
                                          SDL_LOGICAL_PRESENTATION_STRETCH);
     }
 
@@ -54,24 +61,34 @@ struct SDLApplication {
         SDL_Event event;
         // Event Loop
         while (SDL_PollEvent(&event)) {
-            if (event.type == SDL_EVENT_QUIT) {
-                mRunning = false;
-            } else if (event.type == SDL_EVENT_KEY_DOWN) {
-                SDL_Log("A key was pressed %c", event.key.key);
-            } else if (event.type == SDL_EVENT_MOUSE_MOTION) {
-                // SDL_Log("(x, y): (%f, %f)", event.motion.xrel,
-                //         event.motion.yrel);
-            } else if (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN) {
-                SDL_Log("Button clicked: %d", event.button.button);
-                SDL_Log("Clicks: %d", event.button.clicks);
+            switch (event.type) {
+                case SDL_EVENT_QUIT:
+                    mRunning = false;
+                    break;
+
+                case SDL_EVENT_KEY_DOWN:
+                    if (event.key.key == SDLK_F11) {
+                        toggleFullscreen();
+                    }
+                    SDL_Log("Key pressed: %d", event.key.key);
+                    break;
+
+                case SDL_EVENT_MOUSE_MOTION:
+                    // SDL_Log("(x, y): (%f, %f)", event.motion.xrel,
+                    //         event.motion.yrel);
+                    break;
+
+                case SDL_EVENT_MOUSE_BUTTON_DOWN:
+                    SDL_Log("Button clicked: %d", event.button.button);
+                    SDL_Log("Clicks: %d", event.button.clicks);
+                    break;
             }
+            // Application/Game Logic
         }
-        // Application/Game Logic
     }
 
-    void Update() {
-        for (int i{}; i < 100; ++i) {}
-    }
+    void Update() { mPartSystem.update(); }
+
     void Render() {
         //clear frame
         SDL_SetRenderDrawColor(mRenderer, 0x00, 0xAA, 0xFF, 0xFF);
@@ -80,18 +97,14 @@ struct SDLApplication {
         //draw background
         SDL_RenderTexture(mRenderer, mBackground, NULL, NULL);
 
-        SDL_SetRenderDrawColor(mRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
-        SDL_RenderLine(mRenderer, 0.0f, 0.0f, 100.0f, 50.0f);
-
-        SDL_FRect r{.x = 100.0f, .y = 50.0f, .w = 200.0f, .h = 200.0f};
-        SDL_RenderRect(mRenderer, &r);
+        //draw particles
+        mPartSystem.render(mRenderer);
 
         //draw frame
         SDL_RenderPresent(mRenderer);
     }
 
     void MainLoop() {
-        static constexpr Uint64 fpsUpdateIntervalMS{1000};
         Uint64 fps{};
         Uint64 lastTime{};
 
@@ -103,7 +116,7 @@ struct SDLApplication {
             Uint64 deltaTime = SDL_GetTicks() - currentTime;
 
             // FPS Calculation
-            if (currentTime > lastTime + fpsUpdateIntervalMS) {
+            if (currentTime > lastTime + Config::fpsUpdateIntervalMS) {
                 std::string title{"Game Window - FPS: "};
                 title += std::to_string(fps);
                 SDL_SetWindowTitle(mWindow, title.c_str());
@@ -111,5 +124,9 @@ struct SDLApplication {
                 fps = 0;
             }
         }
+    }
+    void toggleFullscreen() {
+        config.isFullscreen = !config.isFullscreen;
+        SDL_SetWindowFullscreen(mWindow, config.isFullscreen);
     }
 };

@@ -28,7 +28,7 @@ rule CXX_EXECUTABLE_LINKER__ff_game_Release
   depfile = $DEP_FILE
   deps = gcc
   command = $PRE_LINK && /usr/bin/clang++-21 $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
+  description = Linking CXX executable $TARGET_FILE; Copying assets directory
   restat = $RESTAT
 
 

@@ -73,7 +73,7 @@ build ff_game: CXX_EXECUTABLE_LINKER__ff_game_Release CMakeFiles/ff_game.dir/src
   LINK_FLAGS = -m64 -Xlinker --dependency-file=CMakeFiles/ff_game.dir/link.d
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libSDL3.so
   OBJECT_DIR = CMakeFiles/ff_game.dir
-  POST_BUILD = :
+  POST_BUILD = cd /home/armin/ff_game/build/Release && /snap/cmake/1487/bin/cmake -E copy_directory /home/armin/ff_game/assets /home/armin/ff_game/build/Release/assets
   PRE_LINK = :
   TARGET_FILE = ff_game
   TARGET_PDB = ff_game.dbg
