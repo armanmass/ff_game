@@ -5155,3 +5155,2187 @@ events:
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/"
+      - "/home/armin/ff_game/build/Release/generators/"
+    found: "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+      ENV{PATH}:
+        - "/home/armin/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
+        - "/home/armin/.local/bin"
+        - "/home/armin/.cargo/bin"
+        - "/home/armin/.nvm/versions/node/v22.19.0/bin"
+        - "/home/armin/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp"
+        - "/mnt/c/Python312/Scripts/"
+        - "/mnt/c/Python312/"
+        - "/mnt/c/Python313/Scripts/"
+        - "/mnt/c/Python313/"
+        - "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR"
+        - "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Program Files (x86)/LLVM/bin"
+        - "/mnt/c/Program Files/CMake/bin"
+        - "/mnt/c/Users/Reset PC/.cargo/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Roaming/npm"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/bin"
+        - "/snap/bin"
+        - "/home/armin/.local/q"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-21 
+      Build flags: -m64;-O2;-DNDEBUG;-march=native
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/armin/ff_game/build/Release/CMakeFiles/4.1.3/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/"
+      - "/home/armin/ff_game/build/Release/generators/"
+    found: "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+      ENV{PATH}:
+        - "/home/armin/.vscode-server/bin/cb1933bbc38d329b3595673a600fab5c7368f0a7/bin/remote-cli"
+        - "/home/armin/.local/bin"
+        - "/home/armin/.cargo/bin"
+        - "/home/armin/.nvm/versions/node/v22.19.0/bin"
+        - "/home/armin/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp"
+        - "/mnt/c/Python312/Scripts/"
+        - "/mnt/c/Python312/"
+        - "/mnt/c/Python313/Scripts/"
+        - "/mnt/c/Python313/"
+        - "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files/nodejs/"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR"
+        - "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Program Files (x86)/LLVM/bin"
+        - "/mnt/c/Program Files/CMake/bin"
+        - "/mnt/c/Users/Reset PC/.cargo/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Roaming/npm"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/bin"
+        - "/snap/bin"
+        - "/home/armin/.local/q"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-21 
+      Build flags: -m64;-stdlib=libstdc++;-O2;-DNDEBUG;-march=native
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/armin/ff_game/build/Release/CMakeFiles/4.1.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco"
+      binary: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
+      CMAKE_C_FLAGS: "-m64 -O2 -DNDEBUG -march=native"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-m64"
+      CMAKE_MODULE_PATH: "/home/armin/ff_game/build/Release/generators"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_06e6e
+        [1/2] /usr/bin/clang-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -O2 -DNDEBUG -march=native    -v -MD -MT CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -x c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-21/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang-21 -m64 -O2 -DNDEBUG -march=native -m64 -v -Wl,-v CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -o cmTC_06e6e   && :
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_06e6e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-21/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-21/lib/clang/21/include] ==> [/usr/lib/llvm-21/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-21/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/ninja -v cmTC_06e6e]
+        ignore line: [[1/2] /usr/bin/clang-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -O2 -DNDEBUG -march=native    -v -MD -MT CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-OT3oco -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -x c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-21/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang-21 -m64 -O2 -DNDEBUG -march=native -m64 -v -Wl -v CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -o cmTC_06e6e   && :]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_06e6e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_06e6e] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib/llvm-21/bin/../lib] ==> dir [/usr/lib/llvm-21/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_06e6e.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-21/bin/../lib] ==> [/usr/lib/llvm-21/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-21/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo"
+      binary: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
+      CMAKE_CXX_FLAGS: "-m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-m64"
+      CMAKE_MODULE_PATH: "/home/armin/ff_game/build/Release/generators"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_2687d
+        [1/2] /usr/bin/clang++-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native  -std=c++17   -v -MD -MT CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=c++17 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward
+         /usr/lib/llvm-21/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang++-21 -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native -m64 -v -Wl,-v CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2687d   && :
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2687d /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+          add: [/usr/lib/llvm-21/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/llvm-21/lib/clang/21/include] ==> [/usr/lib/llvm-21/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/llvm-21/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/ninja -v cmTC_2687d]
+        ignore line: [[1/2] /usr/bin/clang++-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native  -std=c++17   -v -MD -MT CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-QVxEYo -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=c++17 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/cmake/1497/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib/llvm-21/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++-21 -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native -m64 -v -Wl -v CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2687d   && :]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2687d /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2687d] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib/llvm-21/bin/../lib] ==> dir [/usr/lib/llvm-21/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_2687d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-21/bin/../lib] ==> [/usr/lib/llvm-21/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-21/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/snap/cmake/1497/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/"
+      - "/home/armin/ff_game/build/Release/generators/"
+    found: "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+      ENV{PATH}:
+        - "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli"
+        - "/home/armin/.local/bin"
+        - "/home/armin/.bun/bin"
+        - "/home/armin/.cargo/bin"
+        - "/home/armin/.nvm/versions/node/v22.19.0/bin"
+        - "/home/armin/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/local/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp"
+        - "/mnt/c/Python312/Scripts"
+        - "/mnt/c/Python312"
+        - "/mnt/c/Python313/Scripts"
+        - "/mnt/c/Python313"
+        - "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0"
+        - "/mnt/c/WINDOWS/System32/OpenSSH"
+        - "/mnt/c/Program Files/nodejs"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR"
+        - "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Program Files (x86)/LLVM/bin"
+        - "/mnt/c/Program Files/CMake/bin"
+        - "/mnt/c/Users/Reset PC/.cargo/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Roaming/npm"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/bin"
+        - "/mnt/c/Program Files/Git/usr/bin/vendor_perl"
+        - "/mnt/c/Program Files/Git/usr/bin/core_perl"
+        - "/snap/bin"
+        - "/home/armin/.local/q"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-21 
+      Build flags: -m64;-O2;-DNDEBUG;-march=native
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/armin/ff_game/build/Release/CMakeFiles/4.2.0/CompilerIdC/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/"
+      - "/home/armin/ff_game/build/Release/generators/"
+    found: "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+      ENV{PATH}:
+        - "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli"
+        - "/home/armin/.local/bin"
+        - "/home/armin/.bun/bin"
+        - "/home/armin/.cargo/bin"
+        - "/home/armin/.nvm/versions/node/v22.19.0/bin"
+        - "/home/armin/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/local/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp"
+        - "/mnt/c/Python312/Scripts"
+        - "/mnt/c/Python312"
+        - "/mnt/c/Python313/Scripts"
+        - "/mnt/c/Python313"
+        - "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0"
+        - "/mnt/c/WINDOWS/System32/OpenSSH"
+        - "/mnt/c/Program Files/nodejs"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR"
+        - "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Program Files (x86)/LLVM/bin"
+        - "/mnt/c/Program Files/CMake/bin"
+        - "/mnt/c/Users/Reset PC/.cargo/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Roaming/npm"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/bin"
+        - "/mnt/c/Program Files/Git/usr/bin/vendor_perl"
+        - "/mnt/c/Program Files/Git/usr/bin/core_perl"
+        - "/snap/bin"
+        - "/home/armin/.local/q"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-21 
+      Build flags: -m64;-stdlib=libstdc++;-O2;-DNDEBUG;-march=native
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/armin/ff_game/build/Release/CMakeFiles/4.2.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz"
+      binary: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
+      CMAKE_C_FLAGS: "-m64 -O2 -DNDEBUG -march=native"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-m64"
+      CMAKE_MODULE_PATH: "/home/armin/ff_game/build/Release/generators"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_dc78e
+        [1/2] /usr/bin/clang-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -O2 -DNDEBUG -march=native    -v -MD -MT CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -x c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-21/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang-21 -m64 -O2 -DNDEBUG -march=native -m64 -v -Wl,-v CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -o cmTC_dc78e   && :
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc78e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-21/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-21/lib/clang/21/include] ==> [/usr/lib/llvm-21/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-21/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/ninja -v cmTC_dc78e]
+        ignore line: [[1/2] /usr/bin/clang-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -O2 -DNDEBUG -march=native    -v -MD -MT CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-lrCEGz -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -x c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-21/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang-21 -m64 -O2 -DNDEBUG -march=native -m64 -v -Wl -v CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -o cmTC_dc78e   && :]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dc78e /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_dc78e] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib/llvm-21/bin/../lib] ==> dir [/usr/lib/llvm-21/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_dc78e.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-21/bin/../lib] ==> [/usr/lib/llvm-21/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-21/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy"
+      binary: "/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
+      CMAKE_CXX_FLAGS: "-m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-m64"
+      CMAKE_MODULE_PATH: "/home/armin/ff_game/build/Release/generators"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy'
+        
+        Run Build Command(s): /usr/local/bin/ninja -v cmTC_7e210
+        [1/2] /usr/bin/clang++-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native  -std=c++17   -v -MD -MT CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=c++17 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward
+         /usr/lib/llvm-21/lib/clang/21/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        [2/2] : && /usr/bin/clang++-21 -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native -m64 -v -Wl,-v CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7e210   && :
+        Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7e210 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+          add: [/usr/lib/llvm-21/lib/clang/21/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/llvm-21/lib/clang/21/include] ==> [/usr/lib/llvm-21/lib/clang/21/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/llvm-21/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/ninja -v cmTC_7e210]
+        ignore line: [[1/2] /usr/bin/clang++-21 -D_GLIBCXX_USE_CXX11_ABI=0  -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native  -std=c++17   -v -MD -MT CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu skylake -target-feature +prfchw -target-feature -cldemote -target-feature +avx -target-feature +aes -target-feature +sahf -target-feature +pclmul -target-feature -xop -target-feature +crc32 -target-feature -amx-fp8 -target-feature +xsaves -target-feature -avx512fp16 -target-feature -usermsr -target-feature -sm4 -target-feature -egpr -target-feature +sse4.1 -target-feature -avx512ifma -target-feature +xsave -target-feature +sse4.2 -target-feature -tsxldtrk -target-feature -sm3 -target-feature -ptwrite -target-feature -widekl -target-feature -movrs -target-feature +invpcid -target-feature +64bit -target-feature +xsavec -target-feature -avx10.1-512 -target-feature -avx512vpopcntdq -target-feature +cmov -target-feature -avx512vp2intersect -target-feature -avx512cd -target-feature +movbe -target-feature -avxvnniint8 -target-feature -ccmp -target-feature -amx-int8 -target-feature -kl -target-feature -avx10.1-256 -target-feature -sha512 -target-feature -avxvnni -target-feature -rtm -target-feature +adx -target-feature +avx2 -target-feature -hreset -target-feature -movdiri -target-feature -serialize -target-feature -vpclmulqdq -target-feature -avx512vl -target-feature -uintr -target-feature -cf -target-feature +clflushopt -target-feature -raoint -target-feature -cmpccxadd -target-feature +bmi -target-feature -amx-tile -target-feature +sse -target-feature -avx10.2-256 -target-feature -gfni -target-feature -avxvnniint16 -target-feature -amx-fp16 -target-feature -zu -target-feature -ndd -target-feature +xsaveopt -target-feature +rdrnd -target-feature -avx512f -target-feature -amx-bf16 -target-feature -avx512bf16 -target-feature -avx512vnni -target-feature -push2pop2 -target-feature +cx8 -target-feature -avx512bw -target-feature +sse3 -target-feature -pku -target-feature -nf -target-feature -amx-tf32 -target-feature -amx-avx512 -target-feature +fsgsbase -target-feature -clzero -target-feature -mwaitx -target-feature -lwp -target-feature +lzcnt -target-feature -sha -target-feature -movdir64b -target-feature -ppx -target-feature -wbnoinvd -target-feature -enqcmd -target-feature -amx-transpose -target-feature -avx10.2-512 -target-feature -avxneconvert -target-feature -tbm -target-feature -pconfig -target-feature -amx-complex -target-feature +ssse3 -target-feature +cx16 -target-feature +bmi2 -target-feature +fma -target-feature +popcnt -target-feature -avxifma -target-feature +f16c -target-feature -avx512bitalg -target-feature -rdpru -target-feature -clwb -target-feature +mmx -target-feature +sse2 -target-feature +rdseed -target-feature -avx512vbmi2 -target-feature -prefetchi -target-feature -amx-movrs -target-feature -rdpid -target-feature -fma4 -target-feature -avx512vbmi -target-feature -shstk -target-feature -vaes -target-feature -waitpkg -target-feature -sgx -target-feature +fxsr -target-feature -avx512dq -target-feature -sse4a -debugger-tuning=gdb -fdebug-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy -v -fcoverage-compilation-dir=/home/armin/ff_game/build/Release/CMakeFiles/CMakeScratch/TryCompile-giXzHy -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D _GLIBCXX_USE_CXX11_ABI=0 -D NDEBUG -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -std=c++17 -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/cmake/1499/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.1.3 based upon LLVM 21.1.3 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib/llvm-21/lib/clang/21/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++-21 -m64 -stdlib=libstdc++ -O2 -DNDEBUG -march=native -m64 -v -Wl -v CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7e210   && :]
+        ignore line: [Ubuntu clang version 21.1.3 (++20251015093543+bd9bc536b4ac-1~exp1~20251015093558.46)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7e210 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib/llvm-21/bin/../lib -L/lib -L/usr/lib -v CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7e210] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib/llvm-21/bin/../lib] ==> dir [/usr/lib/llvm-21/bin/../lib]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7e210.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/llvm-21/bin/../lib] ==> [/usr/lib/llvm-21/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib/llvm-21/lib;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/snap/cmake/1499/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.42
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:6 (find_package)"
+    name: "entt"
+    configs:
+      -
+        filename: "enttConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "entt-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "entt"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/armin/ff_game/build/Release/CMakeFiles/pkgRedirects/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/CMakeFiles/pkgRedirects/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/generators/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/generators/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.bun/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.bun/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.cargo/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.cargo/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.nvm/versions/node/v22.19.0/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.nvm/versions/node/v22.19.0/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/wsl/lib/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/wsl/lib/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Docker/Docker/resources/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Docker/Docker/resources/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/mingw64/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/mingw64/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/Scripts/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/Scripts/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/Scripts/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/Scripts/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/system32/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/system32/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/Wbem/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/Wbem/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/OpenSSH/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/OpenSSH/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/nodejs/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/nodejs/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/ProgramData/chocolatey/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/ProgramData/chocolatey/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/cmd/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/cmd/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/LLVM/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/LLVM/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/CMake/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/CMake/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/.cargo/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/.cargo/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Roaming/npm/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Roaming/npm/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/vendor_perl/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/vendor_perl/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/core_perl/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/core_perl/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/q/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/q/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1499/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1499/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/CMakeFiles/pkgRedirects/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/CMakeFiles/pkgRedirects/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/generators/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/ff_game/build/Release/generators/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.bun/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.bun/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.cargo/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.cargo/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.nvm/versions/node/v22.19.0/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.nvm/versions/node/v22.19.0/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/wsl/lib/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/wsl/lib/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Docker/Docker/resources/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Docker/Docker/resources/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/mingw64/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/mingw64/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/Scripts/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/Scripts/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python312/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/Scripts/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/Scripts/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Python313/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/system32/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/system32/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/Wbem/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/Wbem/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/OpenSSH/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/WINDOWS/System32/OpenSSH/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/nodejs/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/nodejs/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/ProgramData/chocolatey/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/ProgramData/chocolatey/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/cmd/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/cmd/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/LLVM/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/LLVM/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/CMake/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/CMake/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/.cargo/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/.cargo/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Roaming/npm/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Users/Reset PC/AppData/Roaming/npm/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/vendor_perl/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/vendor_perl/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/core_perl/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/mnt/c/Program Files/Git/usr/bin/core_perl/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/q/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/armin/.local/q/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1499/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/cmake/1499/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/enttConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/entt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+      ENV{PATH}:
+        - "/home/armin/.vscode-server/bin/1e3c50d64110be466c0b4a45222e81d2c9352888/bin/remote-cli"
+        - "/home/armin/.local/bin"
+        - "/home/armin/.bun/bin"
+        - "/home/armin/.cargo/bin"
+        - "/home/armin/.nvm/versions/node/v22.19.0/bin"
+        - "/home/armin/.local/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/local/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Program Files/Git/mingw64/bin"
+        - "/mnt/c/Program Files/Git/usr/bin"
+        - "/mnt/c/Users/Reset PC/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.8/libnvvp"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin"
+        - "/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp"
+        - "/mnt/c/Python312/Scripts"
+        - "/mnt/c/Python312"
+        - "/mnt/c/Python313/Scripts"
+        - "/mnt/c/Python313"
+        - "/mnt/c/Program Files/Eclipse Adoptium/jdk-17.0.14.7-hotspot/bin"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0"
+        - "/mnt/c/WINDOWS/System32/OpenSSH"
+        - "/mnt/c/Program Files/nodejs"
+        - "/mnt/c/ProgramData/chocolatey/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common"
+        - "/mnt/c/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR"
+        - "/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2025.1.1"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/Docker/Docker/resources/bin"
+        - "/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit"
+        - "/mnt/c/Program Files/LLVM/bin"
+        - "/mnt/c/Program Files (x86)/LLVM/bin"
+        - "/mnt/c/Program Files/CMake/bin"
+        - "/mnt/c/Users/Reset PC/.cargo/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Microsoft/WindowsApps"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/Reset PC/AppData/Roaming/npm"
+        - "/mnt/c/Users/Reset PC/AppData/Local/Programs/cursor/resources/app/bin"
+        - "/mnt/c/Program Files/JetBrains/CLion 2025.2.4/bin"
+        - "/mnt/c/Program Files/Git/usr/bin/vendor_perl"
+        - "/mnt/c/Program Files/Git/usr/bin/core_perl"
+        - "/snap/bin"
+        - "/home/armin/.local/q"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/snap/cmake/1499"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_MODULE_PATH:
+        - "/home/armin/ff_game/build/Release/generators"
+        - "/home/armin/ff_game/cmake"
+...

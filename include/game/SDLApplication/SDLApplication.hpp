@@ -4,8 +4,8 @@
 #include <cassert>
 #include <string>
 
-#include "game/Config/Config.hpp"
-#include "game/ParticleSystem/ParticleSystem.hpp"
+#include "Config/Config.hpp"
+#include "ParticleSystem/ParticleSystem.hpp"
 
 struct SDLApplication {
 
@@ -29,7 +29,7 @@ struct SDLApplication {
         } else {
             SDL_Log("Renderer: %s", SDL_GetRendererName(mRenderer));
             SDL_Log("Available renderer drivers:");
-            for (int i = 0; i < SDL_GetNumRenderDrivers(); i++) {
+            for (int i{}; i < SDL_GetNumRenderDrivers(); i++) {
                 SDL_Log("%d. %s", i + 1, SDL_GetRenderDriver(i));
             }
         }
@@ -105,23 +105,23 @@ struct SDLApplication {
     }
 
     void MainLoop() {
-        Uint64 fps{};
+        Uint64 framesRendered{};
         Uint64 lastTime{};
 
         while (mRunning) {
             Uint64 currentTime = SDL_GetTicks();
             Tick();
-            ++fps;
+            ++framesRendered;
             SDL_Delay(16);
-            Uint64 deltaTime = SDL_GetTicks() - currentTime;
 
             // FPS Calculation
             if (currentTime > lastTime + Config::fpsUpdateIntervalMS) {
-                std::string title{"Game Window - FPS: "};
-                title += std::to_string(fps);
+                std::string title{"Game Window - FPS: " +
+                                  std::to_string(framesRendered)};
                 SDL_SetWindowTitle(mWindow, title.c_str());
+
                 lastTime = currentTime;
-                fps = 0;
+                framesRendered = 0;
             }
         }
     }

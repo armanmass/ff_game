@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1487/bin/cmake"
+			"value" : "/snap/cmake/1499/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1487/bin/cpack"
+			"value" : "/snap/cmake/1499/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1487/bin/ctest"
+			"value" : "/snap/cmake/1499/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -142,7 +142,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang++-21"
 		},
 		{
@@ -310,7 +310,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang-21"
 		},
 		{
@@ -954,6 +954,18 @@
 			"value" : "ff_game"
 		},
 		{
+			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_RANLIB",
 			"properties" : 
 			[
@@ -995,7 +1007,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/cmake/1487/share/cmake-4.1"
+			"value" : "/snap/cmake/1499/share/cmake-4.2"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1230,7 +1242,7 @@
 					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "UNINITIALIZED",
 			"value" : "generators/conan_toolchain.cmake"
 		},
 		{
@@ -1296,6 +1308,18 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/local/lib/libSDL3.so"
+		},
+		{
+			"name" : "entt_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for entt."
+				}
+			],
+			"type" : "PATH",
+			"value" : "entt_DIR-NOTFOUND"
 		},
 		{
 			"name" : "ff_game_BINARY_DIR",

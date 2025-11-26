@@ -3,7 +3,7 @@
 #include <SDL3/SDL_stdinc.h>
 #include <vector>
 
-#include "game/Config/Config.hpp"
+#include "Config/Config.hpp"
 
 struct ParticleSystem {
     static constexpr size_t numParticles{100};

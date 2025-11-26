@@ -2,11 +2,25 @@
 	"configurations" : 
 	[
 		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sdl3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdl3-Release-9a613176131b03c4ae4e.json",
+					"name" : "sdl3",
+					"projectIndex" : 0
+				}
+			],
 			"directories" : 
 			[
 				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-9ad1a58d4644cf6543fa.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "4.1"
@@ -23,6 +37,10 @@
 			"projects" : 
 			[
 				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
 					"directoryIndexes" : 
 					[
 						0
@@ -39,7 +57,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ff_game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ff_game-Release-e740ef913e049cd813c7.json",
+					"jsonFile" : "target-ff_game-Release-4632eaa373e3a70d0807.json",
 					"name" : "ff_game",
 					"projectIndex" : 0
 				}
@@ -55,6 +73,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 8
+		"minor" : 9
 	}
 }
